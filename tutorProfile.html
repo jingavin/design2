@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Tutor Profile</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#005A9C",
+            "background-light": "#F7F7F7",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <!-- Top App Bar -->
+    <div
+      class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 shadow-sm">
+      <div class="text-[#333333] dark:text-white flex size-12 shrink-0 items-center">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </div>
+      <div class="flex w-12 items-center justify-end">
+        <button
+          class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#333333] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+          <span class="material-symbols-outlined">more_vert</span>
+        </button>
+      </div>
+    </div>
+    <!-- Profile Header -->
+    <div class="flex p-4 @container bg-white dark:bg-background-dark">
+      <div class="flex w-full flex-col gap-4 items-center">
+        <div class="flex gap-4 flex-col items-center">
+          <div class="relative">
+            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+              data-alt="Tutor John Doe"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkS45Cbxoxf0oPlx8OoBFecJeMbAuFjUQmsv3-nsBTP_ZIfn-v-WL7umYQnx_OC2HZvKJB8sWwUhCsYRkxFNokbK4H-LObgVfd54bo4qCDrUUH_S9It4m6uYG_oKCF98v0uN0NDA_9KCqwFc0Xrq4OJTFYIDt1xeOLl8WtZJ1PqikbGii3_lsrhk3RdK9RY15yebLz67svcVYXnltCipDZKv-t4YMTlH35YvluUpoWwWCC28fo6MwthoQ-CmTmIsqvMUSULFwmW94m");'>
+            </div>
+            <div
+              class="absolute bottom-0 right-0 flex items-center justify-center bg-green-500 rounded-full size-8 text-white">
+              <span class="material-symbols-outlined text-base">verified</span>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <p
+              class="text-[#333333] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">
+              John Doe</p>
+            <p class="text-[#617589] dark:text-gray-400 text-base font-normal leading-normal text-center">Math &amp;
+              Physics Tutor</p>
+            <div class="flex items-center gap-1">
+              <span class="material-symbols-outlined text-yellow-500"
+                style="font-variation-settings: 'FILL' 1;">star</span>
+              <p class="text-[#617589] dark:text-gray-400 text-base font-normal leading-normal text-center">4.9 stars
+              </p>
+            </div>
+            <p class="text-primary text-lg font-bold leading-normal text-center mt-1">$50/hr</p>
+          </div>
+        </div>
+        <div class="flex w-full max-w-[480px] gap-3 @[480px]:w-auto">
+          <a href="chat.html"
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200 dark:bg-gray-700 text-[#333333] dark:text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto">
+            <span class="truncate">Message Tutor</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="p-4 space-y-6">
+      <!-- About Me Section -->
+      <details class="flex flex-col rounded-lg bg-white dark:bg-gray-800 px-4 py-2 group shadow" open="">
+        <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+          <h2 class="text-[#333333] dark:text-white text-base font-bold">About Me</h2>
+          <span
+            class="material-symbols-outlined text-[#333333] dark:text-white group-open:rotate-180 transition-transform">expand_more</span>
+        </summary>
+        <p class="text-[#617589] dark:text-gray-400 text-sm font-normal leading-normal pb-2">I believe in making complex
+          subjects approachable and fun. My goal is to empower students to not just solve problems, but to truly
+          understand the concepts behind them, building a strong foundation for future success.</p>
+      </details>
+      <!-- Qualifications Section -->
+      <div>
+        <h2 class="text-[#333333] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">
+          Qualifications</h2>
+        <div class="space-y-2">
+          <div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+            <div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-10">
+              <span class="material-symbols-outlined">school</span>
+            </div>
+            <p class="text-[#333333] dark:text-white text-base font-normal leading-normal flex-1 truncate">B.S. in
+              Mechanical Engineering</p>
+          </div>
+          <div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+            <div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-10">
+              <span class="material-symbols-outlined">work</span>
+            </div>
+            <p class="text-[#333333] dark:text-white text-base font-normal leading-normal flex-1 truncate">5+ Years
+              Tutoring Experience</p>
+          </div>
+          <div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+            <div class="text-primary flex items-center justify-center rounded-lg bg-primary/20 shrink-0 size-10">
+              <span class="material-symbols-outlined">workspace_premium</span>
+            </div>
+            <p class="text-[#333333] dark:text-white text-base font-normal leading-normal flex-1 truncate">Certified
+              Educator</p>
+          </div>
+        </div>
+      </div>
+      <!-- Availability Section -->
+      <div>
+        <h2 class="text-[#333333] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">
+          Availability</h2>
+        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+          <div class="flex justify-between items-center mb-4">
+            <button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+              <span class="material-symbols-outlined text-[#333333] dark:text-white">chevron_left</span>
+            </button>
+            <h3 class="text-lg font-semibold text-[#333333] dark:text-white">October 2024</h3>
+            <button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+              <span class="material-symbols-outlined text-[#333333] dark:text-white">chevron_right</span>
+            </button>
+          </div>
+          <div class="grid grid-cols-7 gap-2 text-center text-sm text-gray-500 dark:text-gray-400">
+            <div>Su</div>
+            <div>Mo</div>
+            <div>Tu</div>
+            <div>We</div>
+            <div>Th</div>
+            <div>Fr</div>
+            <div>Sa</div>
+          </div>
+          <div class="grid grid-cols-7 gap-2 mt-2 text-center">
+            <!-- Example days. A real implementation would generate this dynamically. -->
+            <div class="text-gray-400 dark:text-gray-600">29</div>
+            <div class="text-gray-400 dark:text-gray-600">30</div>
+            <div>1</div>
+            <div>2</div>
+            <div class="bg-primary/20 text-primary rounded-full cursor-pointer p-2">3</div>
+            <div>4</div>
+            <div>5</div>
+            <div class="bg-primary/20 text-primary rounded-full cursor-pointer p-2">6</div>
+            <div>7</div>
+            <div class="bg-green-500 text-white rounded-full cursor-pointer p-2 relative">8<span
+                class="absolute top-1 right-1 block h-1.5 w-1.5 rounded-full bg-yellow-400"></span></div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div class="bg-primary/20 text-primary rounded-full cursor-pointer p-2">12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div class="bg-primary/20 text-primary rounded-full cursor-pointer p-2">18</div>
+            <div>19</div>
+            <div class="bg-green-500 text-white rounded-full cursor-pointer p-2 relative">20<span
+                class="absolute top-1 right-1 block h-1.5 w-1.5 rounded-full bg-yellow-400"></span></div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div class="bg-green-500 text-white rounded-full cursor-pointer p-2 relative">29<span
+                class="absolute top-1 right-1 block h-1.5 w-1.5 rounded-full bg-yellow-400"></span></div>
+            <div>30</div>
+            <div class="bg-primary/20 text-primary rounded-full cursor-pointer p-2">31</div>
+          </div>
+        </div>
+      </div>
+      <!-- Subjects Offered Section -->
+      <div>
+        <h2 class="text-[#333333] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">
+          Subjects Offered</h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Calculus</span>
+          <span class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Algebra</span>
+          <span class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Physics</span>
+          <span class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Trigonometry</span>
+        </div>
+      </div>
+      <!-- Student Reviews Section -->
+      <div>
+        <div class="flex justify-between items-center pb-3 pt-5">
+          <h2 class="text-[#333333] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Student
+            Reviews</h2>
+          <a class="text-primary text-sm font-bold" href="#">See All</a>
+        </div>
+        <div class="flex overflow-x-auto space-x-4 pb-4 -mx-4 px-4">
+          <div class="flex-shrink-0 w-80 bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+            <div class="flex items-center mb-2">
+              <div class="flex">
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <p class="text-[#617589] dark:text-gray-400 text-sm mb-2">"Amazing tutor! Helped me ace my calculus final."
+            </p>
+            <p class="text-[#333333] dark:text-white text-sm font-semibold">Jane D.</p>
+          </div>
+          <div class="flex-shrink-0 w-80 bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+            <div class="flex items-center mb-2">
+              <div class="flex">
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500">star</span>
+              </div>
+            </div>
+            <p class="text-[#617589] dark:text-gray-400 text-sm mb-2">"John is very patient and explains things clearly.
+              Highly recommend!"</p>
+            <p class="text-[#333333] dark:text-white text-sm font-semibold">Mike R.</p>
+          </div>
+          <div class="flex-shrink-0 w-80 bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+            <div class="flex items-center mb-2">
+              <div class="flex">
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+            </div>
+            <p class="text-[#617589] dark:text-gray-400 text-sm mb-2">"My grades in Physics have improved so much since
+              I started sessions with John."</p>
+            <p class="text-[#333333] dark:text-white text-sm font-semibold">Sarah L.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sticky Footer Button -->
+    <div class="sticky bottom-0 bg-white dark:bg-background-dark p-4 border-t border-gray-200 dark:border-gray-700">
+      <a href="scheduleSession.html"
+        class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] mx-auto">
+        <span class="truncate">Book a Session</span>
+      </a>
+    </div>
+    <div class="h-24"></div>
+    <div
+      class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 p-2 flex justify-around">
+      <a href="welcome.html" class="flex flex-col items-center text-primary w-1/4">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-xs">Home</span>
+      </a>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">calendar_today</span>
+        <span class="text-xs">Calendar</span>
+      </button>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">chat_bubble</span>
+        <span class="text-xs">Messages</span>
+      </button>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span class="text-xs">Profile</span>
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>

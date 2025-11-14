@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Settings</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden group/design-root">
+    <div
+      class="sticky top-0 z-10 flex items-center justify-between bg-background-light dark:bg-background-dark p-4 pb-2 border-b border-gray-200 dark:border-gray-700">
+      <div class="flex size-12 shrink-0 items-center">
+        <a href="welcome.html" class="flex items-center justify-center size-10 text-gray-700 dark:text-gray-300">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </a>
+      </div>
+      <h1 class="flex-1 text-center text-lg font-bold tracking-[-0.015em] text-gray-900 dark:text-gray-100">Settings
+      </h1>
+      <div class="size-12 shrink-0"></div> <!-- Placeholder for centering the title -->
+    </div>
+    <div class="flex-1 overflow-y-auto pb-8">
+      <h2 class="px-4 pb-3 pt-5 text-[22px] font-bold tracking-[-0.015em] text-gray-900 dark:text-gray-100">Account</h2>
+      <div class="space-y-1 bg-white dark:bg-gray-800/50 rounded-xl mx-4 shadow-sm">
+        <div
+          class="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 min-h-14 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-t-xl">
+          <div class="flex items-center gap-4">
+            <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+              <span class="material-symbols-outlined">person</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-gray-800 dark:text-gray-200">Profile Information</p>
+          </div>
+          <div class="shrink-0">
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+          </div>
+        </div>
+        <hr class="border-gray-200 dark:border-gray-700 mx-4" />
+        <div
+          class="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 min-h-14 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+          <div class="flex items-center gap-4">
+            <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+              <span class="material-symbols-outlined">lock</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-gray-800 dark:text-gray-200">Change Password</p>
+          </div>
+          <div class="shrink-0">
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+          </div>
+        </div>
+        <hr class="border-gray-200 dark:border-gray-700 mx-4" />
+        <div
+          class="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 min-h-14 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-b-xl">
+          <div class="flex items-center gap-4">
+            <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+              <span class="material-symbols-outlined">credit_card</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-gray-800 dark:text-gray-200">Payment Methods</p>
+          </div>
+          <div class="shrink-0">
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+          </div>
+        </div>
+      </div>
+      <h2 class="px-4 pb-3 pt-8 text-[22px] font-bold tracking-[-0.015em] text-gray-900 dark:text-gray-100">
+        Notifications</h2>
+      <div class="space-y-1 bg-white dark:bg-gray-800/50 rounded-xl mx-4 shadow-sm">
+        <div class="flex items-center justify-between gap-4 px-4 py-3 min-h-14">
+          <div class="flex items-center gap-4">
+            <div
+              class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-green-100 dark:bg-green-900/50 text-green-500 dark:text-green-400">
+              <span class="material-symbols-outlined">notifications</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-gray-800 dark:text-gray-200">Push Notifications</p>
+          </div>
+          <div class="shrink-0">
+            <label class="relative inline-flex cursor-pointer items-center">
+              <input checked="" class="peer sr-only" type="checkbox" value="" />
+              <div
+                class="peer h-6 w-11 rounded-full bg-gray-200 dark:bg-gray-700 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white rtl:peer-checked:after:-translate-x-full dark:border-gray-600 dark:peer-focus:ring-blue-800">
+              </div>
+            </label>
+          </div>
+        </div>
+        <hr class="border-gray-200 dark:border-gray-700 mx-4" />
+        <div class="flex items-center justify-between gap-4 px-4 py-3 min-h-14">
+          <div class="flex items-center gap-4">
+            <div
+              class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-green-100 dark:bg-green-900/50 text-green-500 dark:text-green-400">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-gray-800 dark:text-gray-200">Email Notifications</p>
+          </div>
+          <div class="shrink-0">
+            <label class="relative inline-flex cursor-pointer items-center">
+              <input class="peer sr-only" type="checkbox" value="" />
+              <div
+                class="peer h-6 w-11 rounded-full bg-gray-200 dark:bg-gray-700 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-primary peer-checked:after:translate-x-full peer-checked:after:border-white rtl:peer-checked:after:-translate-x-full dark:border-gray-600 dark:peer-focus:ring-blue-800">
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <h2 class="px-4 pb-3 pt-8 text-[22px] font-bold tracking-[-0.015em] text-gray-900 dark:text-gray-100">Privacy
+        &amp; Security</h2>
+      <div class="space-y-1 bg-white dark:bg-gray-800/50 rounded-xl mx-4 shadow-sm">
+        <div
+          class="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 min-h-14 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-t-xl">
+          <div class="flex items-center gap-4">
+            <div
+              class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-orange-100 dark:bg-orange-900/50 text-orange-500 dark:text-orange-400">
+              <span class="material-symbols-outlined">policy</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-gray-800 dark:text-gray-200">Privacy Policy</p>
+          </div>
+          <div class="shrink-0">
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+          </div>
+        </div>
+        <hr class="border-gray-200 dark:border-gray-700 mx-4" />
+        <div
+          class="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 min-h-14 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+          <div class="flex items-center gap-4">
+            <div
+              class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-orange-100 dark:bg-orange-900/50 text-orange-500 dark:text-orange-400">
+              <span class="material-symbols-outlined">gavel</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-gray-800 dark:text-gray-200">Terms of Service</p>
+          </div>
+          <div class="shrink-0">
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+          </div>
+        </div>
+        <hr class="border-gray-200 dark:border-gray-700 mx-4" />
+        <div
+          class="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 min-h-14 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-b-xl">
+          <div class="flex items-center gap-4">
+            <div
+              class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-orange-100 dark:bg-orange-900/50 text-orange-500 dark:text-orange-400">
+              <span class="material-symbols-outlined">block</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-gray-800 dark:text-gray-200">Manage Blocked Users</p>
+          </div>
+          <div class="shrink-0">
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+          </div>
+        </div>
+      </div>
+      <h2 class="px-4 pb-3 pt-8 text-[22px] font-bold tracking-[-0.015em] text-gray-900 dark:text-gray-100">General</h2>
+      <div class="space-y-1 bg-white dark:bg-gray-800/50 rounded-xl mx-4 shadow-sm">
+        <div
+          class="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 min-h-14 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-t-xl">
+          <div class="flex items-center gap-4">
+            <div
+              class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+              <span class="material-symbols-outlined">help</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-gray-800 dark:text-gray-200">Help &amp; Support</p>
+          </div>
+          <div class="shrink-0">
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+          </div>
+        </div>
+        <hr class="border-gray-200 dark:border-gray-700 mx-4" />
+        <div
+          class="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 min-h-14 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+          <a href="contact.html" class="flex items-center gap-4">
+            <div
+              class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+              <span class="material-symbols-outlined">info</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-gray-800 dark:text-gray-200">Contact Us</p>
+          </a>
+          <div class="shrink-0">
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+          </div>
+        </div>
+        <hr class="border-gray-200 dark:border-gray-700 mx-4" />
+        <div
+          class="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 min-h-14 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+          <a href="welcome.html" class="flex items-center gap-4">
+            <div
+              class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-red-100 dark:bg-red-900/50 text-red-500 dark:text-red-400">
+              <span class="material-symbols-outlined">logout</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-red-600 dark:text-red-400">Log Out</p>
+          </a>
+        </div>
+        <hr class="border-gray-200 dark:border-gray-700 mx-4" />
+        <div
+          class="flex cursor-pointer items-center justify-between gap-4 px-4 py-3 min-h-14 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-b-xl">
+          <div class="flex items-center gap-4">
+            <div
+              class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-red-100 dark:bg-red-900/50 text-red-500 dark:text-red-400">
+              <span class="material-symbols-outlined">delete</span>
+            </div>
+            <p class="flex-1 truncate text-base font-medium text-red-600 dark:text-red-400">Delete Account</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

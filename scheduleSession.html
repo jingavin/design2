@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Propose a Session</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "success": "#7ED321",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div
+      class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+      <a href="tutorProfile.html" class="text-slate-800 dark:text-white flex size-10 items-center justify-center">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </a>
+      <h2 class="text-slate-800 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
+        Propose a Session</h2>
+      <div class="w-10"></div>
+    </div>
+    <div class="flex flex-col gap-4 p-4">
+      <div class="flex items-center gap-4 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm">
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12"
+          data-alt="Tutor's profile picture"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDeExmS9qfBR6DiEKNRxF_hDiWIxym3RPvPfsmDR5b40aMAM5jmuoDtJtCxNUEh6v-8KTL_GGM8Hy_pY7sHNBjO5M2y52GRlPsCVCyMnvRhbvX9wCXYCyMg5ayKVvXDhb_0q3Y6Vrq98S6IUnhFcMZ4cvXZclvqsLqe2q2uYVESHPTx1vwzmSH3IEZ2rvj7sDUBhBPKNa9OVg2pZckNwohNdfXkE0DiXutqlE9AGOkdz6rozlm7IKkKA5Ey1KNYwgHfyGQT7yyoyvAk");'>
+        </div>
+        <p class="text-slate-900 dark:text-white text-lg font-semibold truncate flex-1">Dr. Evelyn Reed</p>
+      </div>
+      <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm">
+        <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Select a
+          Date</h2>
+        <div class="flex flex-wrap items-center justify-center">
+          <div class="flex min-w-72 max-w-[336px] flex-1 flex-col gap-0.5">
+            <div class="flex items-center p-1 justify-between">
+              <a href="tutorProfile.html" class="text-slate-800 dark:text-white">
+                <span class="material-symbols-outlined">chevron_left</span>
+              </a>
+              <p class="text-slate-900 dark:text-white text-base font-bold leading-tight flex-1 text-center">May 2024
+              </p>
+              <button class="text-slate-800 dark:text-white">
+                <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+            </div>
+            <div class="grid grid-cols-7">
+              <p
+                class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">
+                S</p>
+              <p
+                class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">
+                M</p>
+              <p
+                class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">
+                T</p>
+              <p
+                class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">
+                W</p>
+              <p
+                class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">
+                T</p>
+              <p
+                class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">
+                F</p>
+              <p
+                class="text-slate-500 dark:text-slate-400 text-[13px] font-bold leading-normal tracking-[0.015em] flex h-12 w-full items-center justify-center pb-0.5">
+                S</p>
+              <button
+                class="h-12 w-full text-slate-400 dark:text-slate-500 col-start-4 text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">1</div>
+              </button>
+              <button class="h-12 w-full text-slate-400 dark:text-slate-500 text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">2</div>
+              </button>
+              <button class="h-12 w-full text-slate-400 dark:text-slate-500 text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">3</div>
+              </button>
+              <button class="h-12 w-full text-slate-400 dark:text-slate-500 text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">4</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">5</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">6</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">7</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">8</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">9</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">10</div>
+              </button>
+              <button class="h-12 w-full text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full bg-primary">11</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">12</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">13</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">14</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">15</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">16</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">17</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">18</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">19</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">20</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">21</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">22</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">23</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">24</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">25</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">26</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">27</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">28</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">29</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">30</div>
+              </button>
+              <button class="h-12 w-full text-slate-800 dark:text-white text-sm font-medium leading-normal">
+                <div class="flex size-full items-center justify-center rounded-full">31</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm">
+        <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Choose a
+          Time</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1" for="start-time">Start
+              Time</label>
+            <select
+              class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-primary focus:ring-primary"
+              id="start-time">
+              <option>09:00 AM</option>
+              <option selected="">10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 PM</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-1" for="end-time">End
+              Time</label>
+            <select
+              class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-primary focus:ring-primary"
+              id="end-time">
+              <option>10:00 AM</option>
+              <option selected="">11:00 AM</option>
+              <option>12:00 PM</option>
+              <option>01:00 PM</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm">
+        <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Select a
+          Location</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <label
+            class="flex items-center justify-center p-4 rounded-lg border-2 border-primary bg-primary/20 cursor-pointer">
+            <input checked="" class="hidden" name="location" type="radio" value="in-person" />
+            <span class="text-primary font-semibold">In-Person</span>
+          </label>
+          <label
+            class="flex items-center justify-center p-4 rounded-lg border-2 border-slate-300 dark:border-slate-600 cursor-pointer">
+            <input class="hidden" name="location" type="radio" value="online" />
+            <span class="text-slate-600 dark:text-slate-300 font-semibold">Online</span>
+          </label>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm">
+        <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">What
+          would you like to cover? (Optional)</h2>
+        <textarea
+          class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-primary focus:ring-primary"
+          placeholder="e.g. Preparing for calculus midterm..." rows="4"></textarea>
+      </div>
+      <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm space-y-4">
+        <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Session Cost
+        </h2>
+        <div class="space-y-2">
+          <div class="flex justify-between items-center text-slate-600 dark:text-slate-300">
+            <span>Hourly Rate</span>
+            <span class="font-medium text-slate-900 dark:text-white">$75/hr</span>
+          </div>
+          <div class="flex justify-between items-center text-slate-600 dark:text-slate-300">
+            <span>Session Duration</span>
+            <span class="font-medium text-slate-900 dark:text-white">1 hour</span>
+          </div>
+        </div>
+        <div class="border-t border-slate-200 dark:border-slate-700 my-3"></div>
+        <div class="flex justify-between items-center text-slate-900 dark:text-white">
+          <span class="text-lg font-bold">Total Price</span>
+          <span class="text-2xl font-bold text-success">$75</span>
+        </div>
+      </div>
+    </div>
+    <a href="payment.html" class="sticky bottom-0 bg-background-light dark:bg-background-dark p-4 mt-auto">
+      <button
+        class="w-full bg-primary text-white font-bold py-4 px-4 rounded-xl shadow-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-background-dark">
+        Propose Session
+      </button>
+    </a>
+
+    <div class="h-24"></div>
+    <div
+      class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 p-2 flex justify-around">
+      <a href="studentDash.html" class="flex flex-col items-center text-primary w-1/4">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-xs">Home</span>
+      </a>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">calendar_today</span>
+        <span class="text-xs">Calendar</span>
+      </button>
+      <a href="allChat.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">chat_bubble</span>
+        <span class="text-xs">Messages</span>
+      </a>
+      <a href="studentProfile.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span class="text-xs">Profile</span>
+      </a>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Tutor Chat</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex h-screen w-full flex-col group/design-root overflow-hidden">
+    <div
+      class="flex items-center bg-white dark:bg-background-dark p-4 shadow-sm border-b border-gray-200 dark:border-gray-700">
+      <button class="flex items-center justify-center p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        <span class="material-symbols-outlined text-[#111418] dark:text-white">arrow_back</span>
+      </button>
+      <div class="flex items-center ml-2">
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+          data-alt="Alex's profile picture"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLSgFdgIQ7k2K-Xegr8U4ekZR0JGspt0_sURaScHfzmxHJrFOWcaUw4LesnFe1vBk1poGZhtPIB5Ol_hlQG71_mA0trXzmaaoQvop71v5db07XGsIRXInYJjj-D_fwES5hx5rhy09r08NEx2Jp9CpZA6ah1eXrR8J-tgpSPSDNH6l9a7i0nntzqlZXUkAoZrZ6-mhaNZatPBkye8rnaXb2LNd5_K17ptCT1xOI1NWKMgDi0Ouo19JbY925LgVqrggC8QU-FaNRjq7v");'>
+        </div>
+        <div class="ml-3">
+          <h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-tight">Alex</h2>
+          <p class="text-sm text-green-500 font-medium">Online</p>
+        </div>
+      </div>
+      <div class="flex-1"></div>
+      <button class="flex items-center justify-center p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        <span class="material-symbols-outlined text-[#111418] dark:text-white">more_vert</span>
+      </button>
+    </div>
+    <div class="flex-1 overflow-y-auto p-4 space-y-4">
+      <div class="flex items-end gap-3">
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+          data-alt="Alex's profile picture"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjVearvXcf9AROxWEWa1pOJ6ofA7pjRQqvSlbxBeb04PYuBxQyv7vsUlj40xV59Rbe9oED9wCN3D1C2fi7jpM2ZnNbCJ_qcbME_wKO0e-fpIHvqP_V7H_O005jgzDMEL3Ljded-b-nLIPkQZIYJUcU5QWvsC1YhWF4J_zGssZybBNyL6euq4USV2uGh-swO8lXCxJPhtZsahp0-9CYd4QvwHFoR3EAArARZ5uKHgyDdhk2qyehQHOmCSZg6ZYU7RWJFSiIw9LWPB7z");'>
+        </div>
+        <div class="flex flex-1 flex-col gap-1 items-start">
+          <p
+            class="text-base font-medium leading-normal flex max-w-[360px] rounded-lg rounded-bl-none px-4 py-3 bg-white dark:bg-gray-700 text-[#111418] dark:text-white shadow-sm">
+            Hi, I'm Alex. I saw you're looking for a math tutor. I'd be happy to help you with your algebra homework.
+            What time works best for you to have our first session?
+          </p>
+          <p class="text-[#617589] dark:text-gray-400 text-xs font-normal">10:00 AM</p>
+        </div>
+      </div>
+      <div class="flex items-end gap-3 justify-end">
+        <div class="flex flex-1 flex-col gap-1 items-end">
+          <p
+            class="text-base font-medium leading-normal flex max-w-[360px] rounded-lg rounded-br-none px-4 py-3 bg-primary text-white shadow-sm">
+            Hi Alex, thanks for reaching out. I'm available on weekdays after 5 PM. Does that work for you?
+          </p>
+          <div class="flex items-center gap-1">
+            <p class="text-[#617589] dark:text-gray-400 text-xs font-normal">10:02 AM</p>
+            <span class="material-symbols-outlined text-primary text-base">done_all</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-end gap-3">
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+          data-alt="Alex's profile picture"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQRsxvfSsBFeE91yrTz3oL9zum-N0EhUfUOd6yOo2LI7eUQn3yU-Ax_3Nc17Rz93lGmFIPx-ZE0Q6D6rp4wxrqZAKfPCCEotKixQdGCSt7MAzFKRHGsABixrl0JYCsTx-9kuKIOk79LBcMMaJeCBP4N4EpFgRGzj7NeZ-pAHg92oeOSviHDLmro0dzzH2Ptace6fNmWAi_3zI23WN492qbNwKUlqzLYuuxQseH3p7mtrQeuwQGbjaPyfmx9DgH_8TwlYOuUAAvMAJ1");'>
+        </div>
+        <div class="flex flex-1 flex-col gap-1 items-start">
+          <p
+            class="text-base font-medium leading-normal flex max-w-[360px] rounded-lg rounded-bl-none px-4 py-3 bg-white dark:bg-gray-700 text-[#111418] dark:text-white shadow-sm">
+            Yes, that works for me. I'll send you a link to schedule our first session.
+          </p>
+          <p class="text-[#617589] dark:text-gray-400 text-xs font-normal">10:03 AM</p>
+        </div>
+      </div>
+      <div class="flex items-end gap-3">
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+          data-alt="Alex's profile picture"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAXaX1eyXlObzzVtuOQw_WZuZPaTjyYjkMnbr5bV8Tva52NOaHQAbe5tTJvewcLfRYeVzrhyU8AxjKem9jvtyOHnpL57f9C-p6IgpH1f4adl8hKt3bttpz8g7AIbY-vuik4sLDol_SsA4Z78qA5S1tNZeym_H9u4TLSX37m1U1DhJl6bHSGBnAnAyT9FllcExN8NYg4lmAFX2BLCH9Zh_jI6l_RL1b7XW978bHwJs3UkrFgPzPts0rDhDlynfoJdA2fQECqsi7DKA0U");'>
+        </div>
+        <div class="flex flex-1 flex-col gap-1 items-start">
+          <div
+            class="flex items-center gap-2 p-3 rounded-lg bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl">event</span>
+            <div>
+              <p class="font-bold text-base text-gray-800 dark:text-white">Schedule Tutoring Session</p>
+              <p class="text-sm text-gray-600 dark:text-gray-300">Click to pick a time</p>
+            </div>
+            <a href="scheduleSession.html"
+              class="ml-auto bg-primary/20 text-primary font-bold py-2 px-4 rounded-lg text-sm hover:bg-primary/30">
+              Schedule
+            </a>
+          </div>
+          <p class="text-[#617589] dark:text-gray-400 text-xs font-normal">10:03 AM</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white dark:bg-background-dark p-4 border-t border-gray-200 dark:border-gray-700">
+      <div class="flex items-center gap-3">
+        <div class="flex-1 bg-background-light dark:bg-gray-700 rounded-full flex items-center px-2">
+          <input
+            class="flex-1 bg-transparent border-none focus:ring-0 text-[#111418] dark:text-white placeholder:text-[#617589] dark:placeholder:text-gray-400 p-3"
+            placeholder="Type your message..." value="" />
+          <button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600">
+            <span class="material-symbols-outlined text-[#617589] dark:text-gray-400">attach_file</span>
+          </button>
+          <button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600">
+            <span class="material-symbols-outlined text-[#617589] dark:text-gray-400">calendar_today</span>
+          </button>
+        </div>
+        <button
+          class="flex items-center justify-center size-12 bg-primary rounded-full text-white shadow-lg hover:bg-primary/90 transition-colors">
+          <span class="material-symbols-outlined">send</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contact Us</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark">
+  <div
+    class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden font-display text-gray-800 dark:text-gray-200">
+    <div
+      class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+      <div class="flex size-12 shrink-0 items-center justify-center">
+        <span class="material-symbols-outlined text-gray-800 dark:text-gray-200">arrow_back</span>
+      </div>
+      <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center text-gray-900 dark:text-white">
+        Contact Us</h2>
+      <div class="w-12"></div>
+    </div>
+    <main class="flex-1 px-4 py-6">
+      <p class="text-base font-normal leading-normal pb-6 text-center text-gray-600 dark:text-gray-400">We're here to
+        help. Reach out to us through any of the methods below.</p>
+      <div class="space-y-6">
+        <label class="flex flex-col min-w-40 flex-1">
+          <p class="text-base font-medium leading-normal pb-2 text-gray-900 dark:text-white">Your Name</p>
+          <input
+            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal"
+            placeholder="Enter your name" value="" />
+        </label>
+        <label class="flex flex-col min-w-40 flex-1">
+          <p class="text-base font-medium leading-normal pb-2 text-gray-900 dark:text-white">Your Email</p>
+          <input
+            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal"
+            placeholder="Enter your email address" value="" />
+        </label>
+        <label class="flex flex-col min-w-40 flex-1">
+          <p class="text-base font-medium leading-normal pb-2 text-gray-900 dark:text-white">Subject</p>
+          <input
+            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal"
+            placeholder="Enter the subject of your message" value="" />
+        </label>
+        <label class="flex flex-col min-w-40 flex-1">
+          <p class="text-base font-medium leading-normal pb-2 text-gray-900 dark:text-white">How can we help you?</p>
+          <textarea
+            class="form-textarea flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:border-primary h-32 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-[15px] text-base font-normal leading-normal"
+            placeholder="Describe your issue or question..."></textarea>
+        </label>
+        <div class="mt-2"></div>
+        <a href="welcome.html">
+          <button
+            class="w-full bg-primary text-white font-bold py-4 px-4 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-background-dark transition-colors duration-300">
+            Submit Message
+          </button>
+        </a>
+      </div>
+      <div class="mt-10">
+        <h3 class="text-base font-semibold leading-normal pb-4 text-center text-gray-900 dark:text-white">Or reach us
+          directly</h3>
+        <div class="space-y-4">
+          <a class="flex items-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors duration-200"
+            href="mailto:support@tutorapp.com">
+            <span class="material-symbols-outlined text-primary mr-4">email</span>
+            <div>
+              <p class="font-medium text-gray-900 dark:text-white">Email Us</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">support@tutorapp.com</p>
+            </div>
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto">chevron_right</span>
+          </a>
+          <a class="flex items-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors duration-200"
+            href="tel:+1234567890">
+            <span class="material-symbols-outlined text-primary mr-4">call</span>
+            <div>
+              <p class="font-medium text-gray-900 dark:text-white">Call Us</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400">+1 (234) 567-890</p>
+            </div>
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500 ml-auto">chevron_right</span>
+          </a>
+        </div>
+      </div>
+      <div class="mt-10">
+        <h3 class="text-base font-semibold leading-normal pb-4 text-center text-gray-900 dark:text-white">Quick Answers
+        </h3>
+        <div class="space-y-4">
+          <a class="flex items-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors duration-200"
+            href="#">
+            <span class="material-symbols-outlined text-primary mr-4">quiz</span>
+            <p class="font-medium text-gray-900 dark:text-white flex-1">Frequently Asked Questions</p>
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+          </a>
+          <a class="flex items-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors duration-200"
+            href="#">
+            <span class="material-symbols-outlined text-primary mr-4">menu_book</span>
+            <p class="font-medium text-gray-900 dark:text-white flex-1">Help Center</p>
+            <span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Student Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4A90E2",
+            "secondary": "#F5A623",
+            "success": "#7ED321",
+            "background-light": "#F7F7F7",
+            "background-dark": "#101922",
+            "text-light": "#333333",
+            "text-dark": "#F7F7F7",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <!-- Top Navigation Bar -->
+    <div
+      class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-3xl">school</span>
+        <h1 class="text-xl font-bold leading-tight tracking-[-0.015em] text-text-light dark:text-text-dark">Tutorly</h1>
+      </div>
+      <h2
+        class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center text-text-light dark:text-text-dark">
+        Welcome, Alex!</h2>
+      <a href="settings.html"
+        class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#111418] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+        <span class="material-symbols-outlined text-[#111418] dark:text-white">person</span>
+      </a>
+    </div>
+    <!-- Search and Filter -->
+    <div class="px-4 py-3 sticky top-[76px] bg-background-light dark:bg-background-dark z-10">
+      <div class="flex gap-3">
+        <label class="flex flex-col min-w-40 h-12 w-full">
+          <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+            <div
+              class="text-gray-500 dark:text-gray-400 flex border-none bg-white dark:bg-background-dark/50 items-center justify-center pl-4 rounded-l-lg border-r-0">
+              <span class="material-symbols-outlined">search</span>
+            </div>
+            <input
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-white dark:bg-background-dark/50 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 text-base font-normal leading-normal"
+              placeholder="Search for tutors, subjects..." value="" />
+          </div>
+        </label>
+        <button
+          class="flex items-center justify-center rounded-lg h-12 w-12 bg-white dark:bg-background-dark/50 text-text-light dark:text-text-dark">
+          <span class="material-symbols-outlined">filter_list</span>
+        </button>
+      </div>
+      <div class="flex gap-3 pt-3 overflow-x-auto">
+        <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-4">
+          <p class="text-primary text-sm font-medium leading-normal">Subject</p>
+          <span class="material-symbols-outlined text-primary text-base">expand_more</span>
+        </button>
+        <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-4">
+          <p class="text-primary text-sm font-medium leading-normal">Availability</p>
+          <span class="material-symbols-outlined text-primary text-base">expand_more</span>
+        </button>
+        <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-4">
+          <p class="text-primary text-sm font-medium leading-normal">Price Range</p>
+          <span class="material-symbols-outlined text-primary text-base">expand_more</span>
+        </button>
+        <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-4">
+          <p class="text-primary text-sm font-medium leading-normal">Tutor Rating</p>
+          <span class="material-symbols-outlined text-primary text-base">expand_more</span>
+        </button>
+      </div>
+    </div>
+    <!-- Scheduled Sessions Section -->
+    <div class="px-4 pb-3 pt-5">
+      <h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em]">Your
+        Upcoming Sessions</h2>
+    </div>
+    <div class="flex gap-4 px-4 pb-5 overflow-x-auto">
+      <div
+        class="flex flex-col shrink-0 w-72 gap-3 p-4 rounded-xl bg-white dark:bg-background-dark/50 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+        <div class="flex items-center gap-3">
+          <img class="w-12 h-12 rounded-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Tutor Jane Smith"
+            style='background-image: url("https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&amp;w=256&amp;h=256&amp;auto=format&amp;fit=crop");' />
+          <div>
+            <p class="text-text-light dark:text-text-dark text-base font-bold leading-tight">Jane Smith</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Chemistry</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-200 dark:border-gray-700 my-1"></div>
+        <div class="flex justify-between items-center text-sm">
+          <div class="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+            <span class="material-symbols-outlined text-base">calendar_today</span>
+            <span>Tomorrow</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+            <span class="material-symbols-outlined text-base">schedule</span>
+            <span>3:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col shrink-0 w-72 gap-3 p-4 rounded-xl bg-white dark:bg-background-dark/50 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+        <div class="flex items-center gap-3">
+          <img class="w-12 h-12 rounded-full bg-center bg-no-repeat aspect-square bg-cover"
+            data-alt="Tutor Mike Johnson"
+            style='background-image: url("https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&amp;w=256&amp;h=256&amp;auto=format&amp;fit=crop");' />
+          <div>
+            <p class="text-text-light dark:text-text-dark text-base font-bold leading-tight">Mike Johnson</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">History</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-200 dark:border-gray-700 my-1"></div>
+        <div class="flex justify-between items-center text-sm">
+          <div class="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+            <span class="material-symbols-outlined text-base">calendar_today</span>
+            <span>Oct 28</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+            <span class="material-symbols-outlined text-base">schedule</span>
+            <span>11:00 AM</span>
+          </div>
+        </div>
+      </div>
+      <!-- Empty State Example -->
+      <!-- <div class="flex flex-col items-center justify-center w-full text-center p-8 rounded-xl bg-white dark:bg-background-dark/50 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+                <span class="material-symbols-outlined text-5xl text-gray-400 dark:text-gray-500 mb-2">event_busy</span>
+                <p class="font-semibold text-text-light dark:text-text-dark">No upcoming sessions</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Time to book a new one!</p>
+            </div> -->
+    </div>
+    <!-- Available Tutors Section -->
+    <div class="px-4 pb-3 pt-5">
+      <h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em]">Available
+        Tutors</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 pb-24">
+      <div
+        class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+        <div class="flex items-center gap-4">
+          <img class="w-20 h-20 rounded-lg bg-center bg-no-repeat aspect-square bg-cover" data-alt="Tutor John Doe"
+            style='background-image: url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&amp;w=256&amp;h=256&amp;auto=format&amp;fit=crop");' />
+          <div class="flex flex-col gap-1 flex-1">
+            <p class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">John Doe</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Math, Physics</p>
+            <div class="flex items-center gap-2 mt-1">
+              <div class="flex items-center text-success">
+                <span class="material-symbols-outlined text-base">star</span>
+                <span class="text-sm font-bold">4.8</span>
+              </div>
+              <p class="text-gray-500 dark:text-gray-400 text-sm font-bold leading-normal">| $50/hr</p>
+            </div>
+          </div>
+        </div>
+        <a href="tutorProfile.html"
+          class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium">
+          <span>View Profile</span>
+        </a>
+      </div>
+      <div
+        class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+        <div class="flex items-center gap-4">
+          <img class="w-20 h-20 rounded-lg bg-center bg-no-repeat aspect-square bg-cover" data-alt="Tutor Sarah Lee"
+            style='background-image: url("https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&amp;w=256&amp;h=256&amp;auto=format&amp;fit=crop");' />
+          <div class="flex flex-col gap-1 flex-1">
+            <p class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Sarah Lee</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">English, Literature</p>
+            <div class="flex items-center gap-2 mt-1">
+              <div class="flex items-center text-success">
+                <span class="material-symbols-outlined text-base">star</span>
+                <span class="text-sm font-bold">4.9</span>
+              </div>
+              <p class="text-gray-500 dark:text-gray-400 text-sm font-bold leading-normal">| $45/hr</p>
+            </div>
+          </div>
+        </div>
+        <a href="tutorProfile.html"
+          class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium">
+          <span>View Profile</span>
+        </a>
+      </div>
+      <div
+        class="flex flex-col gap-4 rounded-xl bg-white dark:bg-background-dark/50 p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+        <div class="flex items-center gap-4">
+          <img class="w-20 h-20 rounded-lg bg-center bg-no-repeat aspect-square bg-cover" data-alt="Tutor David Chen"
+            style='background-image: url("https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&amp;w=256&amp;h=256&amp;auto=format&amp;fit=crop");' />
+          <div class="flex flex-col gap-1 flex-1">
+            <p class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">David Chen</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Computer Science</p>
+            <div class="flex items-center gap-2 mt-1">
+              <div class="flex items-center text-success">
+                <span class="material-symbols-outlined text-base">star</span>
+                <span class="text-sm font-bold">5.0</span>
+              </div>
+              <p class="text-gray-500 dark:text-gray-400 text-sm font-bold leading-normal">| $60/hr</p>
+            </div>
+          </div>
+        </div>
+        <a href="tutorProfile.html"
+          class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium">
+          <span>View Profile</span>
+        </a>
+      </div>
+    </div>
+    <div
+      class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 p-2 flex justify-around">
+      <a href="studentDash.html" class="flex flex-col items-center text-primary w-1/4">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-xs">Home</span>
+      </a>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">calendar_today</span>
+        <span class="text-xs">Calendar</span>
+      </button>
+      <a href="allChat.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">chat_bubble</span>
+        <span class="text-xs">Messages</span>
+      </a>
+      <a href="studentProfile.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span class="text-xs">Profile</span>
+      </a>
+    </div>
+
+  </div>
+</body>
+
+</html>

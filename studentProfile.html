@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Edit Profile</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "success": "#7ED321",
+            "neutral-light": "#F5F5F5",
+            "neutral-dark": "#333333",
+            "accent": "#FFA500"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div
+      class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-neutral-light dark:border-neutral-dark/20">
+      <div class="flex items-center text-neutral-dark dark:text-white">
+        <a href="studentDash.html" class="material-symbols-outlined text-2xl">arrow_back</a>
+      </div>
+      <h1
+        class="text-neutral-dark dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
+        Edit Profile</h1>
+      <div class="w-12"></div>
+    </div>
+    <div class="flex-grow p-4">
+      <div class="flex justify-center mb-6">
+        <div class="relative">
+          <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32"
+            data-alt="A placeholder avatar image"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtPdAUuDEh18ZliW0EycmzuCiOXUVl-MrrLsdbT2r9xnymKb5yNSUJKILkCzbd-Phb8gXizZt9Goa87NJMdIb2XWCZFFyMShiXCtLffCd9ex4P_M0WoiGvTTKdcSjCgc1AoqzfK-SVpTbu0JNEjVmkn1OOpY1K924ndmNjzIhWuYsQwTY2HgG9WEXkumKOnCA3IEcu7KL-hbyUmzpvpGp54vDaCeFtzjR-WTxPVncrAe9PiY7TRYOipEYveuYoJVdx21YRFM4oOIEf");'>
+          </div>
+          <button class="absolute bottom-0 right-0 bg-primary text-white rounded-full p-2">
+            <span class="material-symbols-outlined text-lg">edit</span>
+          </button>
+        </div>
+      </div>
+      <p class="text-primary text-lg font-bold text-center mb-8">Change Photo</p>
+      <div class="space-y-6">
+        <section>
+          <h2
+            class="text-neutral-dark dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+            Personal Information</h2>
+          <div class="space-y-4">
+            <div class="px-4">
+              <label class="flex flex-col">
+                <p class="text-neutral-dark dark:text-white text-base font-medium leading-normal pb-2">Full Name</p>
+                <input
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-neutral-dark dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-neutral-light dark:bg-neutral-dark/30 h-14 placeholder:text-gray-500 dark:placeholder:text-gray-400 p-4 text-base font-normal leading-normal"
+                  value="Alex Doe" />
+              </label>
+            </div>
+            <div class="px-4">
+              <label class="flex flex-col">
+                <p class="text-neutral-dark dark:text-white text-base font-medium leading-normal pb-2">Email Address</p>
+                <div class="flex w-full flex-1 items-stretch rounded-lg">
+                  <input
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-l-lg text-neutral-dark dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-neutral-light dark:bg-neutral-dark/30 h-14 placeholder:text-gray-500 dark:placeholder:text-gray-400 p-4 border-r-0 pr-2 text-base font-normal leading-normal"
+                    value="alex.doe@email.com" />
+                  <div
+                    class="flex items-center justify-center pr-4 rounded-r-lg bg-neutral-light dark:bg-neutral-dark/30">
+                    <span class="material-symbols-outlined text-success">verified</span>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="px-4">
+              <label class="flex flex-col">
+                <p class="text-neutral-dark dark:text-white text-base font-medium leading-normal pb-2">Phone Number</p>
+                <input
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-neutral-dark dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-neutral-light dark:bg-neutral-dark/30 h-14 placeholder:text-gray-500 dark:placeholder:text-gray-400 p-4 text-base font-normal leading-normal"
+                  value="+1 234 567 890" />
+              </label>
+            </div>
+            <div class="px-4">
+              <label class="flex flex-col">
+                <p class="text-neutral-dark dark:text-white text-base font-medium leading-normal pb-2">School/University
+                </p>
+                <input
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-neutral-dark dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-neutral-light dark:bg-neutral-dark/30 h-14 placeholder:text-gray-500 dark:placeholder:text-gray-400 p-4 text-base font-normal leading-normal"
+                  placeholder="BCIT" />
+              </label>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2
+            class="text-neutral-dark dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+            Learning Preferences</h2>
+          <div class="space-y-4">
+            <div class="px-4">
+              <label class="flex flex-col">
+                <p class="text-neutral-dark dark:text-white text-base font-medium leading-normal pb-2">Grade Level</p>
+                <div class="relative">
+                  <select
+                    class="form-select appearance-none w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-neutral-dark dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-neutral-light dark:bg-neutral-dark/30 h-14 p-4 text-base font-normal leading-normal">
+                    <option>University</option>
+                    <option>High School</option>
+                    <option>Middle School</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-neutral-dark dark:text-white pointer-events-none">expand_more</span>
+                </div>
+              </label>
+            </div>
+            <div class="px-4">
+              <label class="flex flex-col">
+                <p class="text-neutral-dark dark:text-white text-base font-medium leading-normal pb-2">Preferred
+                  Subjects</p>
+                <div class="relative">
+                  <select
+                    class="form-select appearance-none w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-neutral-dark dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-neutral-light dark:bg-neutral-dark/30 h-14 p-4 text-base font-normal leading-normal">
+                    <option>Computer Science</option>
+                    <option>Mathematics</option>
+                    <option>Physics</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-neutral-dark dark:text-white pointer-events-none">expand_more</span>
+                </div>
+              </label>
+            </div>
+            <div class="px-4">
+              <label class="flex flex-col">
+                <p class="text-neutral-dark dark:text-white text-base font-medium leading-normal pb-2">Preferred Session
+                  Type</p>
+                <div class="relative">
+                  <select
+                    class="form-select appearance-none w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-neutral-dark dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border-none bg-neutral-light dark:bg-neutral-dark/30 h-14 p-4 text-base font-normal leading-normal">
+                    <option>Online</option>
+                    <option>In-person</option>
+                    <option>Group</option>
+                  </select>
+                  <span
+                    class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-neutral-dark dark:text-white pointer-events-none">expand_more</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2
+            class="text-neutral-dark dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+            Payment Methods</h2>
+          <div class="space-y-4 px-4">
+            <div class="bg-neutral-light dark:bg-neutral-dark/30 rounded-lg p-4 flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <img class="w-10" data-alt="Visa card logo"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOGx8dYKe7Vqr13cAcAW8rWUd9c5kjLIwU8sMeW831DEXjFf5NmBINoWJcN5mQGAtT4s_IGAy4rtPOLjUt0IndFhFHN_jsMxv_-uECO8it1v4_jMnFLF_WAFZiHJWGJBzl9IaExi-7LzUDc0mBohpht8P7HF140XsFi9D1a2VDiIC4W9JLKavqjMW0d_2IC_h3gisJ59g33zmNNh9x1SkfQAhYB2xQI0vFr5XZ_A69WYnJ5wbdMg2gq2_Cx0O7JtP3QnWB87P148H4" />
+                <div>
+                  <p class="text-neutral-dark dark:text-white font-medium">Visa **** 1234</p>
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">Expires 12/25</p>
+                </div>
+              </div>
+              <button class="text-primary font-medium">Edit</button>
+            </div>
+            <div class="bg-neutral-light dark:bg-neutral-dark/30 rounded-lg p-4 flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <img class="w-10" data-alt="Mastercard logo"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnwTO9lWhjbrVGuf_kbyygAJMGl7Kiu4EGTwelVSKBT87n43_8yl9EXxgbfRiGGl2qKR7wwfwo-VHxS7_Ie08CXV_pEGdL9tWV6ZTdUUoNeu1uodgcoyJVgUHxq9Om5QYdnBW1tIdovaXbPxbpUxdgRwe45vRbOpc3rYd7hl_AazMQwE_7k3r_sKytj4bAtsU59MBLhovhYWjEYPVlxS7MWXHaSRB5NqXpzK-8z5x5Cjoye-7CGq9VH4Fir-Gwx_fan9Qk36ORNLqb" />
+                <div>
+                  <p class="text-neutral-dark dark:text-white font-medium">Mastercard **** 5678</p>
+                  <p class="text-gray-500 dark:text-gray-400 text-sm">Expires 08/26</p>
+                </div>
+              </div>
+              <button class="text-primary font-medium">Edit</button>
+            </div>
+            <button
+              class="w-full bg-primary/20 dark:bg-primary/30 text-primary font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined">add</span>
+              Add a New Payment Method
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div
+      class="sticky bottom-0 bg-background-light dark:bg-background-dark p-4 border-t border-neutral-light dark:border-neutral-dark/20">
+      <button class="w-full bg-primary text-white font-bold py-4 px-4 rounded-xl text-lg">Save Changes</button>
+      <div class="flex justify-center mt-2">
+        <a class="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1" href="#">
+          <span class="material-symbols-outlined text-base">help_outline</span>
+          Help &amp; Support
+        </a>
+      </div>
+    </div>
+
+    <div class="h-24"></div>
+    <div
+      class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 p-2 flex justify-around">
+      <button class="flex flex-col items-center text-primary w-1/4">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-xs">Home</span>
+      </button>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">calendar_today</span>
+        <span class="text-xs">Calendar</span>
+      </button>
+      <a href="allChat.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">chat_bubble</span>
+        <span class="text-xs">Messages</span>
+      </a>
+      <a href="studentProfile.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span class="text-xs">Profile</span>
+        </button>
+    </div>
+  </div>
+</body>
+
+</html>

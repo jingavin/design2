@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Tutor Home</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&amp;display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div
+      class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-3xl">school</span>
+      </div>
+      <h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
+        Tutor Home</h2>
+      <div class="flex w-12 items-center justify-end">
+        <a href="settings.html"
+          class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#111418] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+          <span class="material-symbols-outlined text-[#111418] dark:text-white">person</span>
+        </a>
+      </div>
+    </div>
+    <h1 class="text-[#111418] dark:text-white tracking-light text-[32px] font-bold leading-tight px-4 pb-3 pt-6">Good
+      Morning, Alex!</h1>
+    <div class="px-4 pb-5">
+      <div class="grid grid-cols-3 gap-4 text-center">
+        <div class="bg-white dark:bg-background-dark rounded-xl p-4 shadow">
+          <p class="text-2xl font-bold text-primary">$1,250</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">This Month</p>
+        </div>
+        <div class="bg-white dark:bg-background-dark rounded-xl p-4 shadow">
+          <p class="text-2xl font-bold text-primary">4.9 <span class="text-yellow-400">★</span></p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Avg. Rating</p>
+        </div>
+        <div class="bg-white dark:bg-background-dark rounded-xl p-4 shadow">
+          <p class="text-2xl font-bold text-primary">25</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Completed</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-[#111418] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+      Upcoming Sessions</h2>
+    <div
+      class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+      <div class="flex items-stretch p-4 gap-4">
+        <div class="flex flex-col gap-4 rounded-xl min-w-48 bg-white dark:bg-background-dark p-4 shadow">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Student avatar"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbhXsZx63EFKw_42sohTNVSy7NZTMFzydbJ3hvvFMYO3WbELG3PRalqPu5zRTOE8rHGFTnQZuRsBS1sN75--WfjXCgvICQdRdyIUCtTUhs4ZzeENUm3lbUOhTSHibUe9GFSsHeTUnFW-oRs2Rkd6PcpiwC1lAIUqA0ScbwLChfxzU9v5AqTznkk5fLFSVCh6HMkJmnCnHaZM1ROe5FbrFSoOpvJ4XrVbQa-vB_b7TQB7T3Kki1mJ5X_nuZV9zIATfR83_zz5yTY1zV");'>
+            </div>
+            <div>
+              <p class="text-[#111418] dark:text-white text-base font-medium leading-normal">John Doe</p>
+              <p class="text-[#617589] dark:text-gray-400 text-sm font-normal leading-normal">Mathematics</p>
+            </div>
+          </div>
+          <p class="text-[#617589] dark:text-gray-400 text-sm font-normal leading-normal">Tomorrow at 10:00 AM</p>
+        </div>
+        <div class="flex flex-col gap-4 rounded-xl min-w-48 bg-white dark:bg-background-dark p-4 shadow">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Student avatar"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-Cbf2ReRx9eHGiGI5cIq6ZquNivx1c2u35rOBAUz9O1aOBGo6i2jzbNNv3cDr2lpZr6QJgv4YDl67wuuHaOS7N__YiDwTTGrH06epRAeum3JMcJop2Hq7QgzGMb7J9sYdQlQCLRqcP9tpc73pykslTaUvBh7j4WjP-SSo5yS2i4dot9UJwPE18sh5spQsAqmGCIXR2yjGoKTjz4vIByDxeFsg1-t_i1TbhoJ7C6jiNP8jvxfeWPaorWQLaTt0xIi3bi6OZC7pcjw6");'>
+            </div>
+            <div>
+              <p class="text-[#111418] dark:text-white text-base font-medium leading-normal">Jane Smith</p>
+              <p class="text-[#617589] dark:text-gray-400 text-sm font-normal leading-normal">Physics</p>
+            </div>
+          </div>
+          <p class="text-[#617589] dark:text-gray-400 text-sm font-normal leading-normal">Wednesday at 2:00 PM</p>
+        </div>
+        <div class="flex flex-col gap-4 rounded-xl min-w-48 bg-white dark:bg-background-dark p-4 shadow">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Student avatar"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDP-YJQwQjoZm6ge-T5ef6_Adb6bXi2Bl0gcz1FjraXI7AxvVgvHq7B4jxJ7A5L29otXWOWRSC1N523imNdufwE5DQgnKl9vFuV_1b5A9rMNj9Y5Kdi_sCdvJI6LLLmPFb0Niz4aqr5yo6a8et39Pw_HKrtbPZoAaE1K0ktZQiOQfJXT_HcRiMT_aZPi9beN1sjvHOdQyTvE7_KGpxtOzCDaZ7yjX-b9KiEG-6t6jTtePUhr9bTdDgv7mUVDjIqNd6C7soBdbs6lIhq");'>
+            </div>
+            <div>
+              <p class="text-[#111418] dark:text-white text-base font-medium leading-normal">Peter Jones</p>
+              <p class="text-[#617589] dark:text-gray-400 text-sm font-normal leading-normal">Chemistry</p>
+            </div>
+          </div>
+          <p class="text-[#617589] dark:text-gray-400 text-sm font-normal leading-normal">Friday at 4:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <h2
+      class="text-[#111418] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 flex items-center">
+      New Requests <span
+        class="ml-2 w-5 h-5 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center">3</span>
+    </h2>
+    <div class="px-4 space-y-4">
+      <div class="bg-white dark:bg-background-dark p-4 rounded-xl shadow">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-center bg-no-repeat aspect-square bg-cover rounded-full shrink-0"
+            data-alt="Student avatar"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcvZ8woQtH2WcLanmdBWgkbuPLB6gPm03rf_H4uhTlcGq3jeCSh5HvdCQ5gAOSCEi9bazfV43FZvj8n7hcG0i7N6RYo3JQ2X-loNeeU2spAelCB8Znoc0Y3lJP9-qV2Yy7ljbeb2g_7Dr8cA5BxsS8xh8trA22Sb77TutrHvuLVoFPB5HygaTLoGGICHZsz1qGHZuwWHk8cz0xfS3m0SX1hWg3R2-Vjkl5KSe_3QqYsq0RaANeNWToxhxt2Hrjz5FQUw_8gedP7KME");'>
+          </div>
+          <div class="flex-grow">
+            <p class="text-[#111418] dark:text-white font-semibold">Samantha Bee</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">History - Tomorrow, 5:00 PM</p>
+          </div>
+        </div>
+        <div class="flex gap-2 mt-4">
+          <a href="studentDetails.html">
+            <button class="flex-1 bg-green-500 text-white font-bold py-2 px-4 rounded-lg">
+              <a href="studentDetails.html">
+                Details
+              </a>
+            </button>
+          </a>
+          <button
+            class="flex-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white font-bold py-2 px-4 rounded-lg">Decline</button>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-background-dark p-4 rounded-xl shadow">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-center bg-no-repeat aspect-square bg-cover rounded-full shrink-0"
+            data-alt="Student avatar"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWEAX7TwfY48PG4bZdpm5-YZC_a6imlGKRAFAEF5b_TnS6Bw2i4JAuKCDxORt2zOYCKROV-TYCA3K_9O5RbdB6ZYqi0ikMMBQtbJ9Hi6UnEKObu6gZVmZ3v9rUzwU0xMoOoBRO-ItSHUM__S5KunOFdEmYFM7JDATLkt6M59OCfvXA9LzUk8_qS06W-5H9ZVYH5y41pGfCjyWhdpz_DBArs4BtxH37J19_gdIkwiZA4jsJvcpBIEtbAWLDF83AWZMO2Rr5EhkXYxXQ");'>
+          </div>
+          <div class="flex-grow">
+            <p class="text-[#111418] dark:text-white font-semibold">Mike Ross</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Law - Thursday, 1:00 PM</p>
+          </div>
+        </div>
+        <div class="flex gap-2 mt-4">
+          <button class="flex-1 bg-green-500 text-white font-bold py-2 px-4 rounded-lg">
+            <a href="studentDetails.html">
+              Details
+            </a>
+          </button>
+
+          <button
+            class="flex-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white font-bold py-2 px-4 rounded-lg">Decline</button>
+        </div>
+      </div>
+    </div>
+    <div class="px-4 pt-8 grid grid-cols-2 gap-4">
+      <button class="bg-primary/20 text-primary font-bold py-4 px-4 rounded-xl text-left flex items-center gap-3">
+        <span class="material-symbols-outlined">calendar_month</span>
+        <span>Set Availability</span>
+      </button>
+      <button class="bg-primary/20 text-primary font-bold py-4 px-4 rounded-xl text-left flex items-center gap-3">
+        <span class="material-symbols-outlined">groups</span>
+        <span>View My Students</span>
+      </button>
+    </div>
+    <div class="h-24"></div>
+    <div
+      class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 p-2 flex justify-around">
+      <button class="flex flex-col items-center text-primary w-1/4">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-xs">Home</span>
+      </button>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">calendar_today</span>
+        <span class="text-xs">Calendar</span>
+      </button>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">chat_bubble</span>
+        <span class="text-xs">Messages</span>
+      </button>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span class="text-xs">Profile</span>
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
