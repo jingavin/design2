@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <script id="tailwind-config">
@@ -23,7 +23,7 @@
             "background-dark": "#101622",
           },
           fontFamily: {
-            "display": ["Manrope", "sans-serif"]
+            "display": ["Inter", "sans-serif"]
           },
           borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
         },
@@ -77,34 +77,38 @@
     <!-- Conversation List -->
     <main class="flex-1 px-2 pb-4">
       <!-- List Item with Unread Indicator -->
-      <div
-        class="flex items-center gap-4 bg-transparent dark:bg-transparent rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800/50 cursor-pointer p-2 min-h-[72px] justify-between">
-        <div class="flex items-center gap-4 w-full">
-          <img class="rounded-full h-14 w-14 object-cover" data-alt="Profile picture of Jane Doe"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfia2TFNyH3MQxzOIOvwggXYaxmRpHE4Pu6D0NHjf6eyX2fK8qHmvsB3IgCkj4y0qnTWNKUBkAI8ZBEWuZE7RUkQw3W35oX0G972jmCaRIxTGTbkpCpEUbO1PrYrzsWcdDCTDlt2je7CdXHP9nFxIP_udxHRkVhIiJUb37lqH3ScXdD2LPXNDxDn8iXNtqvh3esqr7Puahp-f5KTClxiRl2MTYvjRDUbvLRm7C6u43wSabNlu9b3RUZznx2FbVR-dt04uexr3xjSsZ" />
-          <div class="flex flex-col justify-center flex-grow overflow-hidden">
-            <div class="flex justify-between items-center">
-              <p class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal truncate">Jane Doe</p>
-              <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal shrink-0 ml-2">10:45 AM</p>
-            </div>
-            <div class="flex justify-between items-center mt-0.5">
-              <p class="text-gray-800 dark:text-gray-200 text-sm font-semibold leading-normal line-clamp-1">Sounds
-                great, see you then!</p>
-              <div class="flex size-6 items-center justify-center shrink-0">
-                <div
-                  class="flex items-center justify-center size-5 rounded-full bg-primary text-white text-xs font-bold">2
+      <a href="chat.html">
+        <div
+          class="flex items-center gap-4 bg-transparent dark:bg-transparent rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800/50 cursor-pointer p-2 min-h-[72px] justify-between">
+          <div class="flex items-center gap-4 w-full">
+            <img class="rounded-full h-14 w-14 object-cover" data-alt="Profile picture of Jane Doe"
+              src="https://cataas.com/cat" />
+            <div class="flex flex-col justify-center flex-grow overflow-hidden">
+              <div class="flex justify-between items-center">
+                <p class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal truncate">Jane Doe</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal shrink-0 ml-2">10:45 AM
+                </p>
+              </div>
+              <div class="flex justify-between items-center mt-0.5">
+                <p class="text-gray-800 dark:text-gray-200 text-sm font-semibold leading-normal line-clamp-1">Sounds
+                  great, see you then!</p>
+                <div class="flex size-6 items-center justify-center shrink-0">
+                  <div
+                    class="flex items-center justify-center size-5 rounded-full bg-primary text-white text-xs font-bold">
+                    2
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
       <!-- List Item with Unread Indicator (Different User) -->
       <div
         class="flex items-center gap-4 bg-transparent dark:bg-transparent rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800/50 cursor-pointer p-2 min-h-[72px] justify-between">
         <div class="flex items-center gap-4 w-full">
           <img class="rounded-full h-14 w-14 object-cover" data-alt="Profile picture of Alex Smith"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3O26qyOL8FBBHwiUV4yTvdTm4roH6ZSH8XGxvGIWKsl2kxIXll6dgl567rqtaB5NAAY5XySbKLeIAL0EuW2nmVmNjOUxmtjfDSMSKzP4ovNyWze4g-bQZxGPQ3u-17hS_1ewowkXwCs6_V6T3PuYLl9rfm8E39fMjDeDn4jAdZYxO847rS5qPTNR-Zgu5e8_jgMIPd-WCkYeiVDJbiq3h4ASS2bLgAwgw20iNrH6lVnW-oTE_bkejErOd57Pvj3PLfVfdk6v8uRIg" />
+            src="https://cataas.com/cat" />
           <div class="flex flex-col justify-center flex-grow overflow-hidden">
             <div class="flex justify-between items-center">
               <p class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal truncate">Alex Smith</p>
@@ -125,7 +129,7 @@
         class="flex items-center gap-4 bg-transparent dark:bg-transparent rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800/50 cursor-pointer p-2 min-h-[72px] justify-between">
         <div class="flex items-center gap-4 w-full">
           <img class="rounded-full h-14 w-14 object-cover" data-alt="Profile picture of Dr. Emily Carter"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlfRfXV1F6E_5ZY0VNbxlvVY0AVk1PCykg8mFfR6emiiZKURoYhJDcCNec08O8zzqdehARHNRIe6i2U1Zx_b7iH6KBjpOh11zz2X5e_anF57B_uvAbAKJBHRt0W7Sfq8B-7hnn4SocQwZeDK-rLT-xRu5NpuFpC1WMcrZNYMxLfDxqpDRpirtDMZznc52uC9gP90Xu85aX4WzcV9C7uvZAGAMSlwnOOZZrEOuwnJWBQ5q5Xl0GB0gyHNSYqk5B0_TxfFah1UAtZcKO" />
+            src="https://cataas.com/cat" />
           <div class="flex flex-col justify-center flex-grow overflow-hidden">
             <div class="flex justify-between items-center">
               <p class="text-gray-900 dark:text-gray-100 text-base font-medium leading-normal truncate">Dr. Emily Carter
@@ -142,7 +146,7 @@
         class="flex items-center gap-4 bg-transparent dark:bg-transparent rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800/50 cursor-pointer p-2 min-h-[72px] justify-between">
         <div class="flex items-center gap-4 w-full">
           <img class="rounded-full h-14 w-14 object-cover" data-alt="Profile picture of Michael Chen"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT9hBM5Csgi1o5h0KW6PBpTGrhMFrjVtNxBvsbhZgnA41i5_DBtjKSxvmddgzDrEZitxnprqeH9xw4TArSCO65QbLillO4XQRxxVBafyV0XRSyEPmeeehloPwmx8bzyVjaRqiHrvXYpKaSKFfKEbKJphX5Q9KDplWpzA6j0jVDy-cJE2njonNMy-BdCrgShPb06dBfI_jEvQicP7iPd33dFki2fz5ZIYPMuKTr9azV2-LDF0D125BL40Nqe_SpT8vHCkOqXh39nq2D" />
+            src="https://cataas.com/cat" />
           <div class="flex flex-col justify-center flex-grow overflow-hidden">
             <div class="flex justify-between items-center">
               <p class="text-gray-900 dark:text-gray-100 text-base font-medium leading-normal truncate">Michael Chen</p>
@@ -158,7 +162,7 @@
         class="flex items-center gap-4 bg-transparent dark:bg-transparent rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800/50 cursor-pointer p-2 min-h-[72px] justify-between">
         <div class="flex items-center gap-4 w-full">
           <img class="rounded-full h-14 w-14 object-cover" data-alt="Profile picture of Sarah Johnson"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMD80596cp6EjURE3zsH8JVNgnnryDJKmCFyfondXGJgBQaZHxXHn2X5gAhjIX6225F2P_o3qYe7-m_Bxhc3p4XSw-L6AAf1ZmU72ruZUMTWb-oDNIHJ0MWDvMmTvXR9QDDIkVYZNrOiVa_57yEWX0IzuQjGYuP-1HMK7UN53U5qt2y7G-4xl2R5DlADKqmt4L8s2vgYDzzi9W8A9JYOWQg_cUcYHDXvOHDD6YPokEZYAJ47t11Jzn4zdse21-gBu16VW4eykvwOuT" />
+            src="https://cataas.com/cat" />
           <div class="flex flex-col justify-center flex-grow overflow-hidden">
             <div class="flex justify-between items-center">
               <p class="text-gray-900 dark:text-gray-100 text-base font-medium leading-normal truncate">Sarah Johnson
